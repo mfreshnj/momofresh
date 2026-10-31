@@ -177,6 +177,10 @@ textarea {
   margin-top: 22px;
 }
 
+.compact-actions {
+  margin-top: 16px;
+}
+
 .primary-btn,
 .secondary-btn {
   display: inline-flex;
@@ -239,33 +243,60 @@ textarea {
   margin-bottom: 20px;
 }
 
+.compact-heading {
+  margin-bottom: 12px;
+}
+
+.menu-heading-wrap {
+  margin-bottom: 14px;
+}
+
+.menu-section-label {
+  margin: 0;
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--primary);
+}
+
 .section-heading h2 {
   margin: 8px 0 0;
-  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
   color: var(--secondary);
+  letter-spacing: -0.05em;
+  line-height: 0.96;
 }
 
 .category-filters {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 26px;
+  margin: 8px 0 28px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(92, 77, 60, 0.15);
+  border-radius: 20px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .filter-btn {
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: white;
+  background: rgba(255, 255, 255, 0.7);
   color: var(--secondary);
-  padding: 11px 16px;
+  padding: 12px 18px;
   font-weight: 700;
   cursor: pointer;
+  transition: all 0.18s ease;
+  box-shadow: 0 2px 0 rgba(27, 27, 27, 0.02);
 }
 
 .filter-btn.active {
-  background: var(--secondary);
+  background: linear-gradient(135deg, var(--secondary), #2c2a27);
   color: white;
   border-color: var(--secondary);
+  box-shadow: 0 8px 18px rgba(36, 28, 16, 0.14);
 }
 
 .menu-group {
@@ -472,9 +503,9 @@ textarea {
   right: 0;
   top: 0;
   height: 100vh;
-  width: min(460px, 100%);
-  background: #fff;
-  border-left: 1px solid var(--line);
+  width: min(720px, 100%);
+  background: linear-gradient(180deg, #fffdfb 0%, #fff4ea 100%);
+  border-left: 1px solid rgba(199, 90, 45, 0.12);
   box-shadow: -14px 0 28px rgba(27, 27, 27, 0.08);
   transform: translateX(101%);
   transition: transform 0.25s ease;
@@ -501,6 +532,7 @@ textarea {
   display: none;
 }
 
+.review-panel,
 .customizer-panel {
   position: relative;
   width: min(520px, 100%);
@@ -526,7 +558,8 @@ textarea {
   line-height: 1;
 }
 
-.customizer-header {
+.customizer-header,
+.review-header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -537,7 +570,8 @@ textarea {
   padding-bottom: 10px;
 }
 
-.customizer-header h3 {
+.customizer-header h3,
+.review-header h3 {
   margin: 0;
   color: var(--secondary);
   font-size: clamp(1.5rem, 3vw, 2rem);
@@ -545,7 +579,8 @@ textarea {
   text-align: left;
 }
 
-.customizer-body {
+.customizer-body,
+.review-body {
   display: block;
   overflow-y: auto;
   padding-bottom: 12px;
@@ -588,64 +623,13 @@ textarea {
   font-size: 0.95rem;
 }
 
-.note-toggle-block {
-  display: grid;
-  gap: 6px;
-}
-
-.note-toggle {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: transparent;
-  border: none;
-  padding: 0;
-  color: var(--secondary);
-  font-size: 0.95rem;
-  font-weight: 700;
-  cursor: pointer;
-  text-align: left;
-}
-
-.note-toggle-icon {
-  width: 22px;
-  height: 22px;
-  border: 2px solid var(--secondary);
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  line-height: 1;
-}
-
-.notes-panel {
-  display: block;
-}
-
-.notes-panel.hidden {
-  display: none;
-}
-
-.option-block textarea,
-.notes-panel textarea {
-  width: 100%;
-  border: 2px solid var(--secondary);
-  border-radius: 16px;
-  background: #fff;
-  padding: 12px 14px;
-  color: var(--text);
-  font-size: 1rem;
-  resize: vertical;
-  min-height: 52px;
-}
-
 .modal-row {
   display: grid;
   gap: 6px;
 }
 
-.customizer-footer {
+.customizer-footer,
+.review-footer {
   position: sticky;
   bottom: 0;
   background: white;
@@ -664,27 +648,90 @@ textarea {
   margin-bottom: 10px;
 }
 
-.customizer-panel .primary-btn {
+.customizer-panel .primary-btn,
+.review-panel .primary-btn {
   padding: 12px 14px;
   font-size: 1rem;
   margin-top: 2px;
 }
 
+.review-block {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.review-block h4 {
+  margin: 0;
+  color: var(--secondary);
+  font-size: 1rem;
+}
+
+.review-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--secondary);
+  font-size: 0.92rem;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed var(--line);
+}
+
+.review-address {
+  display: block;
+}
+
+.review-address strong {
+  display: block;
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+.review-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.review-item-meta {
+  color: var(--muted);
+  font-size: 0.75rem;
+  margin-top: 4px;
+}
+
+.review-item-total {
+  display: grid;
+  justify-items: end;
+  gap: 2px;
+}
+
+.review-empty {
+  margin: 0;
+  color: var(--muted);
+}
+
 .cart-header,
 .cart-summary {
-  padding: 20px;
-  border-bottom: 1px solid var(--line);
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(199, 90, 45, 0.12);
 }
 
 .cart-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-shrink: 0;
+  background: rgba(255,255,255,0.38);
 }
 
 .cart-header h3 {
   margin: 0;
   color: var(--secondary);
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
+  letter-spacing: -0.04em;
 }
 
 #closeCart {
@@ -705,129 +752,192 @@ textarea {
 .cart-items {
   flex: 1;
   overflow-y: auto;
-  padding: 20px;
+  padding: 12px 18px 10px;
   display: grid;
-  gap: 16px;
+  gap: 10px;
+  min-height: 0;
+  background: rgba(255,255,255,0.18);
 }
 
 .cart-item {
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 14px;
-  background: #fffaf4;
+  border: 1px solid rgba(199, 90, 45, 0.12);
+  border-radius: 16px;
+  padding: 11px 12px 10px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255, 244, 236, 0.8));
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+  cursor: default;
+}
+
+.cart-item:hover,
+.cart-item:focus-visible {
+  border-color: rgba(199, 90, 45, 0.45);
+  box-shadow: 0 10px 20px rgba(199, 90, 45, 0.08);
+  transform: translateY(-1px);
+  outline: none;
 }
 
 .cart-item-main {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 12px;
+  min-height: 42px;
 }
 
 .cart-item-main h4 {
   margin: 0;
   color: var(--secondary);
-  font-size: 1.05rem;
+  font-size: 1.02rem;
+  line-height: 1.35;
+  flex: 1;
+}
+
+.item-actions-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
 }
 
 .item-detail {
   color: var(--muted);
-  font-size: 0.8rem;
-  margin-top: 4px;
+  font-size: 0.76rem;
+  margin-top: 6px;
   line-height: 1.5;
-}
-
-.remove-btn {
-  border: none;
-  background: rgba(217, 90, 43, 0.08);
-  color: var(--primary-dark);
-  font-weight: 700;
-  padding: 8px 10px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.qty-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-top: 12px;
 }
 
 .qty-controls {
   display: inline-flex;
   align-items: center;
-  border: 1px solid var(--line);
-  border-radius: 10px;
+  border: 1px solid rgba(199, 90, 45, 0.15);
+  border-radius: 12px;
   overflow: hidden;
+  background: rgba(255,255,255,0.7);
+  flex-shrink: 0;
 }
 
 .qty-button {
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   border: none;
-  background: white;
-  font-size: 1.1rem;
+  background: rgba(255,255,255,0.8);
+  color: var(--secondary);
+  font-size: 1.15rem;
   cursor: pointer;
 }
 
 .qty-value {
-  min-width: 24px;
+  min-width: 28px;
   text-align: center;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--secondary);
+}
+
+.mini-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-btn {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(199, 90, 45, 0.12);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.7);
+  color: var(--secondary);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.icon-btn.danger {
+  color: var(--primary-dark);
 }
 
 .item-price {
   font-weight: 800;
   color: var(--secondary);
-}
-
-.cart-item textarea {
-  width: 100%;
-  margin-top: 12px;
-  min-height: 64px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 10px 12px;
-  resize: vertical;
+  min-width: 74px;
+  text-align: right;
 }
 
 .order-form {
-  padding: 20px;
+  padding: 12px 18px 10px;
   display: grid;
-  gap: 12px;
-  border-bottom: 1px solid var(--line);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 12px;
+  border-bottom: 1px solid rgba(199, 90, 45, 0.08);
+  align-content: start;
+  background: rgba(255,255,255,0.22);
 }
 
 .order-form label {
   display: grid;
-  gap: 8px;
-  font-size: 0.8rem;
+  gap: 6px;
+  font-size: 0.78rem;
   font-weight: 700;
   color: var(--secondary);
 }
 
+.order-form .full-width {
+  grid-column: 1 / -1;
+}
+
 .order-form input,
-.order-form select {
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 11px 12px;
-  background: white;
+.order-form select,
+.order-form textarea {
+  border: 1px solid rgba(199, 90, 45, 0.18);
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: rgba(255,255,255,0.9);
+  font: inherit;
+  box-shadow: inset 0 1px 2px rgba(27,27,27,0.02);
+}
+
+.order-form textarea {
+  resize: vertical;
+  min-height: 72px;
+}
+
+.hidden-field {
+  display: none !important;
 }
 
 .cart-summary {
   border-bottom: none;
+  padding-top: 12px;
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+}
+
+.cart-actions {
+  display: grid;
+  gap: 10px;
 }
 
 .summary-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   font-size: 1.05rem;
   color: var(--secondary);
+}
+
+.secondary-btn {
+  background: linear-gradient(180deg, #f8f2eb, #efe4d2);
+  color: var(--secondary);
+  border: 1px solid rgba(199, 90, 45, 0.12);
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .site-footer {

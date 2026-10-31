@@ -10,14 +10,14 @@
     "variants": [{ "name": "Veg", "extra": 0 }],
     "styles": [
       { "name": "Steamed", "extra": 0 },
-      { "name": "Fried", "extra": 20 },
-      { "name": "Chili", "extra": 25 },
-      { "name": "Jhol", "extra": 30 },
-      { "name": "Tandoori", "extra": 35 }
+      { "name": "Fried", "extra": 10 },
+      { "name": "Chili", "extra": 10 },
+      { "name": "Jhol", "extra": 15 },
+      { "name": "Tandoori", "extra": 15 }
     ],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "40 pcs", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "80 pcs", "price": 120 }
     ]
   },
   {
@@ -31,14 +31,14 @@
     "variants": [{ "name": "Chicken", "extra": 0 }],
     "styles": [
       { "name": "Steamed", "extra": 0 },
-      { "name": "Fried", "extra": 20 },
-      { "name": "Chili", "extra": 25 },
-      { "name": "Jhol", "extra": 30 },
-      { "name": "Tandoori", "extra": 35 }
+      { "name": "Fried", "extra": 10 },
+      { "name": "Chili", "extra": 10 },
+      { "name": "Jhol", "extra": 15 },
+      { "name": "Tandoori", "extra": 15 }
     ],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 130 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "40 pcs", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "80 pcs", "price": 120 }
     ]
   },
   {
@@ -52,8 +52,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 110 }
     ]
   },
   {
@@ -67,8 +67,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "40 pcs", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "80 pcs", "price": 120 }
     ]
   },
   {
@@ -82,8 +82,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "40 pcs", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "80 pcs", "price": 110 }
     ]
   },
   {
@@ -97,8 +97,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "40 pcs", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "80 pcs", "price": 110 }
     ]
   },
   {
@@ -112,8 +112,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "40 pcs", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "80 pcs", "price": 110 }
     ]
   },
   {
@@ -127,8 +127,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "20 pcs", "price": 60 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "40 pcs", "price": 110 }
     ]
   },
   {
@@ -142,8 +142,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 70 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 70 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 120 }
     ]
   },
   {
@@ -157,8 +157,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 70 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "40 pcs", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "80 pcs", "price": 120 }
     ]
   },
   {
@@ -172,8 +172,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 85 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 140 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 140 }
     ]
   },
   {
@@ -187,8 +187,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 130 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 140 }
     ]
   },
   {
@@ -202,8 +202,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 90 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 160 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 140 }
     ]
   },
   {
@@ -217,8 +217,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 95 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 170 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 85 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 160 }
     ]
   },
   {
@@ -232,8 +232,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 100 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 180 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 140 }
     ]
   },
   {
@@ -247,8 +247,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 120 }
     ]
   },
   {
@@ -262,8 +262,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 120 }
     ]
   },
   {
@@ -277,8 +277,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 120 }
     ]
   },
   {
@@ -292,8 +292,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 120 }
     ]
   },
   {
@@ -307,8 +307,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 120 }
     ]
   },
   {
@@ -322,8 +322,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 70 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 120 }
     ]
   },
   {
@@ -337,8 +337,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 70 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 140 }
     ]
   },
   {
@@ -352,8 +352,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 90 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 160 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 90 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 170 }
     ]
   },
   {
@@ -367,8 +367,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 90 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 160 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 85 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 160 }
     ]
   },
   {
@@ -382,8 +382,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 90 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 160 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 85 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 160 }
     ]
   },
   {
@@ -397,8 +397,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 90 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 160 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 85 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 160 }
     ]
   },
   {
@@ -412,8 +412,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 110 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 190 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 85 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 160 }
     ]
   },
   {
@@ -427,8 +427,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 120 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 210 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 120 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 220 }
     ]
   },
   {
@@ -442,8 +442,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 140 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 240 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "10 pcs", "price": 100 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "20 pcs", "price": 190 }
     ]
   },
   {
@@ -457,7 +457,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 130 }
     ]
   },
   {
@@ -471,7 +472,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 110 }
     ]
   },
   {
@@ -485,7 +487,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 70 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 120 }
     ]
   },
   {
@@ -499,7 +502,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 70 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 120 }
     ]
   },
   {
@@ -513,7 +517,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 130 }
     ]
   },
   {
@@ -527,7 +532,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 35 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 110 }
     ]
   },
   {
@@ -541,7 +547,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 50 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 110 }
     ]
   },
   {
@@ -555,7 +562,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 70 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 120 }
     ]
   },
   {
@@ -569,7 +577,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 90 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 160 }
     ]
   },
   {
@@ -583,7 +592,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 140 }
     ]
   },
   {
@@ -594,10 +604,14 @@
     "description": "Classic pasta tossed with vegetables and a light savory sauce.",
     "tags": ["Veg", "Comfort"],
     "isActive": true,
-    "variants": [{ "name": "Regular", "extra": 0 }],
-    "styles": [{ "name": "Standard", "extra": 0 }],
+    "styles": [
+      { "name": "Marinara", "extra": 0 },
+      { "name": "Cheese", "extra": 10 },
+      { "name": "Pesto", "extra": 10 }
+    ],  
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 80 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 120 }
     ]
   },
   {
@@ -609,9 +623,11 @@
     "tags": ["Non-Veg", "Best Seller"],
     "isActive": true,
     "variants": [{ "name": "Regular", "extra": 0 }],
-    "styles": [{ "name": "Standard", "extra": 0 }],
+    "styles": [{ "name": "Dum", "extra": 0 },
+            { "name": "Special Fried Chicken", "extra": 10 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 95 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 90 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 160 }
     ]
   },
   {
@@ -625,7 +641,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 55 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 55 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 100 }
     ]
   },
   {
@@ -639,7 +656,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 55 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 55 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 100 }
     ]
   },
   {
@@ -653,8 +671,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "40 pc", "price": 60 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "80 pc", "price": 110 }
     ]
   },
   {
@@ -672,8 +690,8 @@
       { "name": "Garlic", "extra": 10 }
     ],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "40 pc", "price": 70 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "80 pc", "price": 130 }
     ]
   },
   {
@@ -687,8 +705,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 120 }
     ]
   },
   {
@@ -702,8 +720,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 130 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "20 pcs", "price": 90 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "40 pcs", "price": 170 }
     ]
   },
   {
@@ -722,8 +740,8 @@
       { "name": "Mix Veg", "extra": 15 }
     ],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 70 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "20 pc", "price": 90 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "40 pc", "price": 170 }
     ]
   },
   {
@@ -736,13 +754,13 @@
     "isActive": true,
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [
-      { "name": "Grilled", "extra": 0 },
-      { "name": "Paneer", "extra": 10 },
-      { "name": "Plain Cold", "extra": 0 }
+      { "name": "Cold Tomato Cucumber", "extra": 0 },
+      { "name": "Grilled Aloo", "extra": 10 },
+      { "name": "Grilled Paneer", "extra": 20 }
     ],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 130 }
+      { "label": "Small Tray", "serves": "Serves 10 people", "pcs": "10 pcs", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20 people", "pcs": "20 pcs", "price": 120 }
     ]
   },
   {
@@ -756,8 +774,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 70 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 70 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 130 }
     ]
   },
   {
@@ -771,12 +789,12 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [
       { "name": "Boiled", "extra": 0 },
-      { "name": "Scrambled", "extra": 5 },
-      { "name": "Omelette", "extra": 10 }
+      { "name": "Scrambled", "extra": 10 },
+      { "name": "Omelette", "extra": 20 }
     ],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 80 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 140 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "20 pcs", "price": 80 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "40 pcs", "price": 150 }
     ]
   },
   {
@@ -790,8 +808,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 85 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 150 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 85 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 150 }
     ]
   },
   {
@@ -805,7 +823,9 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 35 }
+      { "label": "Small Jar", "serves": "Serves 10-11 people", "pcs": "64 oz", "price": 35 },
+      { "label": "Large Jar", "serves": "Serves 20-22 people", "pcs": "128 oz", "price": 65 }
+
     ]
   },
   {
@@ -819,8 +839,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 40 }
-    ]
+      { "label": "Small Jar", "serves": "Serves 10-11 people", "pcs": "64 oz", "price": 35 },
+      { "label": "Large Jar", "serves": "Serves 20-22 people", "pcs": "128 oz", "price": 65 }    ]
   },
   {
     "id": "idli-coconut-chutney",
@@ -833,8 +853,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 80 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 140 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "20 pcs", "price": 70 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "40 pcs", "price": 130 }
     ]
   },
   {
@@ -848,8 +868,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 70 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 70 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 130 }
     ]
   },
   {
@@ -863,8 +883,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 130 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 140 }
     ]
   },
   {
@@ -878,8 +898,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "20 pcs", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "40 pcs", "price": 120 }
     ]
   },
   {
@@ -893,8 +913,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 140 }
     ]
   },
   {
@@ -908,8 +928,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "20 pcs", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "40 pcs", "price": 140 }
     ]
   },
   {
@@ -923,8 +943,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 140 }
     ]
   },
   {
@@ -938,8 +958,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 85 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 150 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 80 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 150 }
     ]
   },
   {
@@ -953,8 +973,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 140 }
     ]
   },
   {
@@ -968,8 +988,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Bottle", "serves": "1 serving", "pcs": "Bottle", "price": 6 },
-      { "label": "Large Bottle", "serves": "2 servings", "pcs": "Bottle", "price": 10 }
+      { "label": "1 Gallon", "serves": "12-15 servings", "pcs": "", "price": 50 },
+      { "label": "5 Gallon", "serves": "60-65 servings", "pcs": "", "price": 200 }
     ]
   },
   {
@@ -990,9 +1010,8 @@
       { "name": "Fanta", "extra": 0 }
     ],
     "sizes": [
-      { "label": "Can", "serves": "1 serving", "pcs": "Can", "price": 3.5 },
-      { "label": "6 Pack", "serves": "6 servings", "pcs": "Cans", "price": 19 },
-      { "label": "12 Pack", "serves": "12 servings", "pcs": "Cans", "price": 36 }
+      { "label": "Can", "serves": "1 serving", "pcs": "Can", "price": 2 },
+      { "label": "10 Pack", "serves": "10 servings", "pcs": "Cans", "price": 20 }
     ]
   },
   {
@@ -1006,7 +1025,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Bottle", "serves": "1 serving", "pcs": "Bottle", "price": 2.5 }
+      { "label": "Bottle", "serves": "1 serving", "pcs": "Bottle", "price": 2 },
+      { "label": "10 Pack", "serves": "10 servings", "pcs": "Bottles", "price": 10 }
     ]
   },
   {
@@ -1020,7 +1040,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Bottle", "serves": "1 serving", "pcs": "Bottle", "price": 5 }
+      { "label": "Bottle", "serves": "1 serving", "pcs": "Bottle", "price": 3 },
+      { "label": "10 Pack", "serves": "10 servings", "pcs": "Bottles", "price": 25 }
     ]
   },
   {
@@ -1034,8 +1055,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Pitcher", "serves": "8-10 servings", "pcs": "Pitcher", "price": 22 },
-      { "label": "Large Pitcher", "serves": "15-20 servings", "pcs": "Pitcher", "price": 38 }
+      { "label": "Pitcher", "serves": "10-12 servings", "pcs": "1 Gallon", "price": 20 },
+      { "label": "Large Pitcher", "serves": "50-55 servings", "pcs": "5 Gallon", "price": 80 }
     ]
   },
   {
@@ -1049,8 +1070,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Pitcher", "serves": "8-10 servings", "pcs": "Pitcher", "price": 20 },
-      { "label": "Large Pitcher", "serves": "15-20 servings", "pcs": "Pitcher", "price": 35 }
+      { "label": "Pitcher", "serves": "10-12 servings", "pcs": "1 Gallon", "price": 20 },
+      { "label": "Large Pitcher", "serves": "50-55 servings", "pcs": "5 Gallon", "price": 80 }
     ]
   },
   {
@@ -1064,8 +1085,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Pitcher", "serves": "8-10 servings", "pcs": "Pitcher", "price": 20 },
-      { "label": "Large Pitcher", "serves": "15-20 servings", "pcs": "Pitcher", "price": 35 }
+      { "label": "Pitcher", "serves": "10-12 servings", "pcs": "1 Gallon", "price": 20 },
+      { "label": "Large Pitcher", "serves": "50-55 servings", "pcs": "5 Gallon", "price": 80 }
     ]
   },
   {
@@ -1079,8 +1100,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 55 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 90 }
+      { "label": "Small Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 60 },
+      { "label": "Large Tray", "serves": "Serves 40-45 people", "pcs": "", "price": 100 }
     ]
   },
   {
@@ -1094,8 +1115,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 58 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 95 }
+      { "label": "Small Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 60 },
+      { "label": "Large Tray", "serves": "Serves 40-45 people", "pcs": "", "price": 100 }
     ]
   },
   {
@@ -1109,8 +1130,8 @@
     "variants": [{ "name": "Regular", "extra": 0 }],
     "styles": [{ "name": "Standard", "extra": 0 }],
     "sizes": [
-      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 60 },
-      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 100 }
+      { "label": "Small Tray", "serves": "Serves 20-25 people", "pcs": "", "price": 60 },
+      { "label": "Large Tray", "serves": "Serves 40-45 people", "pcs": "", "price": 100 }
     ]
   }
 ]

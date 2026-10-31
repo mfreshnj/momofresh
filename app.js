@@ -6,21 +6,22 @@ const emptyCart = document.getElementById('emptyCart');
 const subtotalValue = document.getElementById('subtotalValue');
 const cartPanel = document.getElementById('cartPanel');
 const customizerModal = document.getElementById('customizerModal');
+const reviewModal = document.getElementById('reviewModal');
 const customizerTitle = document.getElementById('customizerTitle');
 const customizerDescription = document.getElementById('customizerDescription');
+const reviewOrderSummary = document.getElementById('reviewOrderSummary');
+const reviewSubtotal = document.getElementById('reviewSubtotal');
 const modalStyle = document.getElementById('modalStyle');
 const modalSize = document.getElementById('modalSize');
 const modalQty = document.getElementById('modalQty');
-const modalNote = document.getElementById('modalNote');
-const toggleNotes = document.getElementById('toggleNotes');
-const notesPanel = document.getElementById('notesPanel');
 const modalPrice = document.getElementById('modalPrice');
 
 const cart = [];
 const state = {
   activeCategory: 'All',
   menu: [],
-  currentItem: null
+  currentItem: null,
+  currentCartIndex: null
 };
 
 const formatCurrency = (value) => new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(value);
@@ -44,6 +45,11 @@ function calculateItemPrice(item, variant, size, style) {
   return sizePrice + variantExtra + styleExtra;
 }
 
+function formatCategoryLabel(category) {
+  if (!category || category === 'All') return category;
+  return category === 'momo' ? 'Momo' : category;
+}
+
 function getCategories(items) {
   const categories = ['All'];
   items.forEach((item) => {
@@ -65,7 +71,7 @@ function renderCategoryFilters() {
           class="filter-btn ${state.activeCategory === category ? 'active' : ''}"
           data-category="${category}"
         >
-          ${category}
+          ${formatCategoryLabel(category)}
         </button>
       `
     )
@@ -167,7 +173,7 @@ function renderMenu() {
 
       return `
         <section class="menu-group">
-          <h3 class="menu-group-heading">${category}</h3>
+          <h3 class="menu-group-heading">${formatCategoryLabel(category)}</h3>
           ${subgroupMarkup}
         </section>
       `;
@@ -194,6 +200,17 @@ function fillSelectOptions(select, options, valueKey, labelKey, extraKey) {
     .join('');
 }
 
+function fillSizeOptions(select, options) {
+  select.innerHTML = options
+    .map((option) => {
+      const pcsValue = option.pcs == null ? '' : String(option.pcs).trim();
+      const pcsText = pcsValue ? ` (${pcsValue})` : '';
+      const priceText = option.price != null ? ` ($${Number(option.price).toFixed(2)})` : '';
+      return `<option value="${option.label}">${option.label}${pcsText}${priceText}</option>`;
+    })
+    .join('');
+}
+
 function updateCustomizerDetails() {
   if (!state.currentItem) return;
 
@@ -207,35 +224,123 @@ function updateCustomizerDetails() {
 
 function openCustomizer(item) {
   state.currentItem = item;
+  state.currentCartIndex = null;
   customizerTitle.textContent = item.name;
   customizerDescription.textContent = item.description;
-  if (modalNote) modalNote.value = '';
-  if (notesPanel) {
-    notesPanel.classList.add('hidden');
-  }
-  if (toggleNotes) {
-    toggleNotes.setAttribute('aria-expanded', 'false');
-    toggleNotes.querySelector('.note-toggle-icon').textContent = '＋';
-  }
-
   const styleOptions = item.styles || [{ name: 'Standard', extra: 0 }];
   const sizeOptions = item.sizes || [{ label: 'Standard', price: item.basePrice || 0, serves: '', pcs: '' }];
 
   fillSelectOptions(modalStyle, styleOptions, 'name', 'name', 'extra');
-  fillSelectOptions(modalSize, sizeOptions, 'label', 'label', 'price');
+  fillSizeOptions(modalSize, sizeOptions);
 
   modalStyle.value = getDefaultStyle(item)?.name || styleOptions[0].name;
   modalSize.value = getDefaultSize(item)?.label || sizeOptions[0].label;
 
   modalQty.value = 1;
+  document.getElementById('addModalToCart').textContent = 'Add to Cart';
+  updateCustomizerDetails();
+  customizerModal.classList.remove('hidden');
+  customizerModal.setAttribute('aria-hidden', 'false');
+}
+
+function openCartItemEditor(index) {
+  const item = cart[index];
+  if (!item) return;
+
+  const menuItem = state.menu.find((entry) => entry.id === item.itemId);
+  if (!menuItem) return;
+
+  state.currentItem = menuItem;
+  state.currentCartIndex = index;
+  customizerTitle.textContent = item.name;
+  customizerDescription.textContent = menuItem.description;
+
+  const styleOptions = menuItem.styles || [{ name: 'Standard', extra: 0 }];
+  const sizeOptions = menuItem.sizes || [{ label: 'Standard', price: menuItem.basePrice || 0, serves: '', pcs: '' }];
+
+  fillSelectOptions(modalStyle, styleOptions, 'name', 'name', 'extra');
+  fillSizeOptions(modalSize, sizeOptions);
+
+  modalStyle.value = item.style || styleOptions[0].name;
+  modalSize.value = item.size || sizeOptions[0].label;
+  modalQty.value = item.quantity;
+  document.getElementById('addModalToCart').textContent = 'Update Item';
   updateCustomizerDetails();
   customizerModal.classList.remove('hidden');
   customizerModal.setAttribute('aria-hidden', 'false');
 }
 
 function closeCustomizer() {
+  state.currentCartIndex = null;
+  state.currentItem = null;
+  document.getElementById('addModalToCart').textContent = 'Add to Cart';
   customizerModal.classList.add('hidden');
   customizerModal.setAttribute('aria-hidden', 'true');
+}
+
+function renderReviewModal() {
+  if (!reviewOrderSummary || !reviewSubtotal) return;
+
+  const name = document.getElementById('customerName')?.value.trim() || 'Not provided';
+  const phone = document.getElementById('customerPhone')?.value.trim() || 'Not provided';
+  const eventDate = document.getElementById('eventDate')?.value || 'Not provided';
+  const guestCount = document.getElementById('guestCount')?.value.trim() || 'Not provided';
+  const serviceTime = document.getElementById('serviceTime')?.value || 'Not provided';
+  const orderType = document.getElementById('orderType')?.value || 'Pickup';
+  const deliveryAddress = document.getElementById('deliveryAddress')?.value.trim() || 'Not provided';
+  const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+
+  const itemsHtml = cart.length
+    ? cart
+        .map(
+          (item, index) => `
+            <div class="review-item-row">
+              <div>
+                <strong>${index + 1}. ${item.name}</strong>
+                <div class="review-item-meta">${item.variant} • ${item.style} • ${item.size}</div>
+              </div>
+              <div class="review-item-total">
+                <span>${item.quantity}x</span>
+                <strong>${formatCurrency(item.price * item.quantity)}</strong>
+              </div>
+            </div>
+          `
+        )
+        .join('')
+    : '<p class="review-empty">Your cart is empty.</p>';
+
+  reviewOrderSummary.innerHTML = `
+    <div class="review-block">
+      <h4>Order details</h4>
+      <div class="review-line"><span>Customer</span><strong>${name}</strong></div>
+      <div class="review-line"><span>Phone</span><strong>${phone}</strong></div>
+      <div class="review-line"><span>Event date</span><strong>${eventDate}</strong></div>
+      <div class="review-line"><span>Headcount</span><strong>${guestCount}</strong></div>
+      <div class="review-line"><span>Time</span><strong>${serviceTime}</strong></div>
+      <div class="review-line"><span>Order type</span><strong>${orderType}</strong></div>
+      ${orderType === 'Delivery' ? `<div class="review-line review-address"><span>Delivery address</span><strong>${deliveryAddress}</strong></div>` : ''}
+    </div>
+
+    <div class="review-block">
+      <h4>Items</h4>
+      ${itemsHtml}
+    </div>
+  `;
+
+  reviewSubtotal.textContent = formatCurrency(subtotal);
+}
+
+function openReviewModal() {
+  if (!reviewModal) return;
+  renderReviewModal();
+  reviewModal.classList.remove('hidden');
+  reviewModal.setAttribute('aria-hidden', 'false');
+}
+
+function closeReviewModal() {
+  if (!reviewModal) return;
+  reviewModal.classList.add('hidden');
+  reviewModal.setAttribute('aria-hidden', 'true');
 }
 
 function addItemFromCustomizer() {
@@ -245,23 +350,33 @@ function addItemFromCustomizer() {
   const selectedStyle = (item.styles || []).find((option) => option.name === modalStyle.value) || getDefaultStyle(item);
   const selectedSize = (item.sizes || []).find((option) => option.label === modalSize.value) || getDefaultSize(item);
   const quantity = Math.max(1, Number(modalQty.value) || 1);
-  const note = modalNote?.value.trim() || '';
-
   const price = calculateItemPrice(item, getDefaultVariant(item), selectedSize, selectedStyle);
 
-  cart.push({
-    id: `${item.id}-${Date.now()}-${Math.random().toString(16).slice(2, 7)}`,
-    itemId: item.id,
-    name: item.name,
-    variant: getDefaultVariant(item)?.name || 'Regular',
-    style: selectedStyle?.name || 'Standard',
-    size: selectedSize?.label || 'Standard',
-    serves: selectedSize?.serves || '',
-    pcs: selectedSize?.pcs || '',
-    price,
-    quantity,
-    note
-  });
+  if (state.currentCartIndex !== null && cart[state.currentCartIndex]) {
+    cart[state.currentCartIndex] = {
+      ...cart[state.currentCartIndex],
+      style: selectedStyle?.name || 'Standard',
+      size: selectedSize?.label || 'Standard',
+      serves: selectedSize?.serves || '',
+      pcs: selectedSize?.pcs || '',
+      price,
+      quantity
+    };
+  } else {
+    cart.push({
+      id: `${item.id}-${Date.now()}-${Math.random().toString(16).slice(2, 7)}`,
+      itemId: item.id,
+      name: item.name,
+      variant: getDefaultVariant(item)?.name || 'Regular',
+      style: selectedStyle?.name || 'Standard',
+      size: selectedSize?.label || 'Standard',
+      serves: selectedSize?.serves || '',
+      pcs: selectedSize?.pcs || '',
+      price,
+      quantity,
+      note: ''
+    });
+  }
 
   renderCart();
   closeCustomizer();
@@ -278,7 +393,8 @@ function renderCart() {
   }
 
   emptyCart.style.display = 'none';
-  cartCount.textContent = cart.length;
+  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+  cartCount.textContent = totalItems;
 
   const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   subtotalValue.textContent = formatCurrency(subtotal);
@@ -286,48 +402,56 @@ function renderCart() {
   cartItemsEl.innerHTML = cart
     .map(
       (item, index) => `
-        <div class="cart-item">
+        <div class="cart-item" tabindex="0" data-edit-index="${index}">
           <div class="cart-item-main">
-            <div>
-              <h4>${item.name}</h4>
-              <div class="item-detail">
-                ${item.variant} • ${item.style} • ${item.size}
-                ${item.serves ? ` • ${item.serves}` : ''}
-                ${item.pcs ? ` • ${item.pcs}` : ''}
+            <h4>${item.name}</h4>
+
+            <div class="item-actions-inline">
+              <div class="qty-controls">
+                <button class="qty-button" type="button" data-qty-action="decrease" data-index="${index}" aria-label="Decrease quantity">−</button>
+                <span class="qty-value">${item.quantity}</span>
+                <button class="qty-button" type="button" data-qty-action="increase" data-index="${index}" aria-label="Increase quantity">+</button>
+              </div>
+
+              <span class="item-price">${formatCurrency(item.price * item.quantity)}</span>
+
+              <div class="mini-actions">
+                <button class="icon-btn" type="button" data-edit-index="${index}" aria-label="Edit item">✎</button>
+                <button class="icon-btn danger" type="button" data-remove-index="${index}" aria-label="Remove item">×</button>
               </div>
             </div>
-            <button class="remove-btn" type="button" data-remove-index="${index}">Remove</button>
           </div>
 
-          <div class="qty-row">
-            <div class="qty-controls">
-              <button class="qty-button" type="button" data-qty-action="decrease" data-index="${index}">−</button>
-              <span class="qty-value">${item.quantity}</span>
-              <button class="qty-button" type="button" data-qty-action="increase" data-index="${index}">+</button>
-            </div>
-            <span class="item-price">${formatCurrency(item.price * item.quantity)}</span>
+          <div class="item-detail">
+            ${item.variant} • ${item.style} • ${item.size}
+            ${item.serves ? ` • ${item.serves}` : ''}
+            ${item.pcs ? ` • ${item.pcs}` : ''}
           </div>
-
-          <textarea
-            aria-label="Note for ${item.name}"
-            placeholder="Add note for this item (less spicy, no onion, extra chutney...)"
-            data-note-index="${index}"
-          >${item.note}</textarea>
         </div>
       `
     )
     .join('');
 
   document.querySelectorAll('[data-remove-index]').forEach((button) => {
-    button.addEventListener('click', () => {
+    button.addEventListener('click', (event) => {
+      event.stopPropagation();
       const index = Number(button.dataset.removeIndex);
       cart.splice(index, 1);
       renderCart();
     });
   });
 
+  document.querySelectorAll('[data-edit-index]').forEach((button) => {
+    button.addEventListener('click', (event) => {
+      event.stopPropagation();
+      const index = Number(button.dataset.editIndex);
+      openCartItemEditor(index);
+    });
+  });
+
   document.querySelectorAll('[data-qty-action]').forEach((button) => {
-    button.addEventListener('click', () => {
+    button.addEventListener('click', (event) => {
+      event.stopPropagation();
       const index = Number(button.dataset.index);
       const action = button.dataset.qtyAction;
 
@@ -359,11 +483,23 @@ function closeCart() {
   cartPanel.classList.remove('open');
 }
 
+function toggleOrderDetails() {
+  const orderType = document.getElementById('orderType');
+  const deliveryAddressBlock = document.getElementById('deliveryAddressBlock');
+  if (!orderType || !deliveryAddressBlock) return;
+
+  const isDelivery = orderType.value === 'Delivery';
+  deliveryAddressBlock.classList.toggle('hidden-field', !isDelivery);
+}
+
 function prepareWhatsAppMessage() {
   const name = document.getElementById('customerName').value.trim();
   const phone = document.getElementById('customerPhone').value.trim();
   const eventDate = document.getElementById('eventDate').value;
+  const guestCount = document.getElementById('guestCount').value.trim();
+  const serviceTime = document.getElementById('serviceTime').value;
   const orderType = document.getElementById('orderType').value;
+  const deliveryAddress = document.getElementById('deliveryAddress')?.value.trim() || '';
 
   if (!name || !phone) {
     alert('Please enter your name and phone number before placing the order.');
@@ -372,6 +508,11 @@ function prepareWhatsAppMessage() {
 
   if (!cart.length) {
     alert('Your cart is empty. Please add at least one item.');
+    return null;
+  }
+
+  if (orderType === 'Delivery' && !deliveryAddress) {
+    alert('Please enter the delivery address before placing a delivery order.');
     return null;
   }
 
@@ -388,7 +529,10 @@ function prepareWhatsAppMessage() {
     `Name: ${name}`,
     `Phone: ${phone}`,
     `Order Type: ${orderType}`,
-    eventDate ? `Event Date: ${eventDate}` : '',
+    guestCount ? `Headcount: ${guestCount}` : 'Headcount: Not provided',
+    eventDate ? `Event Date: ${eventDate}` : 'Event Date: Not provided',
+    serviceTime ? `Preferred Time: ${serviceTime}` : 'Preferred Time: Not provided',
+    orderType === 'Delivery' ? `Delivery Address: ${deliveryAddress}` : '',
     '',
     'Order Summary:',
     ...lines,
@@ -523,8 +667,27 @@ function bindControls() {
   document.getElementById('cartToggle')?.addEventListener('click', openCart);
   document.getElementById('closeCart')?.addEventListener('click', closeCart);
   document.getElementById('closeCustomizer')?.addEventListener('click', closeCustomizer);
+  document.getElementById('closeReviewModal')?.addEventListener('click', closeReviewModal);
   document.getElementById('addModalToCart')?.addEventListener('click', addItemFromCustomizer);
+  document.getElementById('reviewOrderButton')?.addEventListener('click', () => {
+    if (!cart.length) {
+      alert('Your cart is empty. Please add at least one item first.');
+      return;
+    }
+    openReviewModal();
+  });
+  document.getElementById('confirmReviewOrder')?.addEventListener('click', () => {
+    closeReviewModal();
+    sendOrderToWhatsApp();
+  });
   document.getElementById('orderButton')?.addEventListener('click', sendOrderToWhatsApp);
+  document.getElementById('orderType')?.addEventListener('change', toggleOrderDetails);
+  reviewModal?.addEventListener('click', (event) => {
+    if (event.target === reviewModal) {
+      closeReviewModal();
+    }
+  });
+  toggleOrderDetails();
 
   if (scrollTrigger) {
     scrollTrigger.addEventListener('click', () => {
@@ -544,12 +707,6 @@ function bindControls() {
     }
   });
 
-  toggleNotes?.addEventListener('click', () => {
-    const isExpanded = toggleNotes.getAttribute('aria-expanded') === 'true';
-    toggleNotes.setAttribute('aria-expanded', String(!isExpanded));
-    notesPanel?.classList.toggle('hidden', isExpanded);
-    toggleNotes.querySelector('.note-toggle-icon').textContent = isExpanded ? '＋' : '−';
-  });
 }
 
 bindControls();

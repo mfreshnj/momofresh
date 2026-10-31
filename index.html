@@ -40,19 +40,14 @@
             <p>
               Custom catering menus built for family tables, office lunches, and celebrations.
             </p>
-            <div class="hero-actions">
-              <a href="#menu" class="primary-btn">View Menu</a>
-              <a href="#contact" class="secondary-btn">Order Info</a>
-            </div>
           </div>
         </div>
       </section>
 
       <section id="menu" class="menu-section">
         <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Menu</p>
-            <h2>Our selections</h2>
+          <div class="section-heading compact-heading menu-heading-wrap">
+            <p class="eyebrow menu-section-label">Menu</p>
           </div>
 
           <div id="categoryFilters" class="category-filters" aria-label="Menu filters"></div>
@@ -97,11 +92,11 @@
       <div id="cartItems" class="cart-items"></div>
 
       <div class="order-form">
-        <label>
+        <label class="full-width">
           Full Name
           <input id="customerName" type="text" placeholder="Your name" />
         </label>
-        <label>
+        <label class="full-width">
           Phone Number
           <input id="customerPhone" type="tel" placeholder="Your phone number" />
         </label>
@@ -110,11 +105,23 @@
           <input id="eventDate" type="date" />
         </label>
         <label>
+          Headcount
+          <input id="guestCount" type="number" min="1" placeholder="Guests" />
+        </label>
+        <label>
+          Pickup / Delivery Time
+          <input id="serviceTime" type="time" />
+        </label>
+        <label>
           Order Type
           <select id="orderType">
             <option value="Pickup">Pickup</option>
             <option value="Delivery">Delivery</option>
           </select>
+        </label>
+        <label id="deliveryAddressBlock" class="full-width hidden-field">
+          Delivery Address
+          <textarea id="deliveryAddress" rows="3" placeholder="Street address, apartment, city, ZIP"></textarea>
         </label>
       </div>
 
@@ -123,7 +130,10 @@
           <span>Subtotal</span>
           <strong id="subtotalValue">$0.00</strong>
         </div>
-        <button id="orderButton" class="primary-btn full-width" type="button">Order via WhatsApp</button>
+        <div class="cart-actions">
+          <button id="reviewOrderButton" class="secondary-btn full-width" type="button">Review Order</button>
+          <button id="orderButton" class="primary-btn full-width" type="button">Order via WhatsApp</button>
+        </div>
       </div>
     </aside>
 
@@ -172,17 +182,6 @@
               <input id="modalQty" type="number" min="1" value="1" />
             </div>
 
-            <div class="note-toggle-block">
-              <button id="toggleNotes" class="note-toggle" type="button" aria-expanded="false">
-                <span class="note-toggle-icon">＋</span>
-                <span>Add special instructions</span>
-              </button>
-
-              <div id="notesPanel" class="notes-panel hidden">
-                <textarea id="modalNote" rows="3" placeholder="Let the restaurant know of any allergies or preparation instructions."></textarea>
-              </div>
-            </div>
-
             <div class="customizer-footer">
               <div class="modal-total">
                 <span>Total</span>
@@ -192,6 +191,28 @@
               <button id="addModalToCart" class="primary-btn full-width" type="button">Add to Cart</button>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="reviewModal" class="modal-backdrop hidden" aria-hidden="true">
+      <div class="review-panel" role="dialog" aria-modal="true" aria-labelledby="reviewTitle">
+        <button id="closeReviewModal" class="close-modal" type="button" aria-label="Close review">×</button>
+
+        <div class="review-header">
+          <h3 id="reviewTitle">Review Order</h3>
+        </div>
+
+        <div class="review-body">
+          <div id="reviewOrderSummary"></div>
+        </div>
+
+        <div class="review-footer">
+          <div class="modal-total">
+            <span>Subtotal</span>
+            <strong id="reviewSubtotal">$0.00</strong>
+          </div>
+          <button id="confirmReviewOrder" class="primary-btn full-width" type="button">Order via WhatsApp</button>
         </div>
       </div>
     </div>
