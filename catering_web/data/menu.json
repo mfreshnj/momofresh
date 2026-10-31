@@ -1,0 +1,1116 @@
+[
+  {
+    "id": "veg-momos",
+    "name": "Veg Momo",
+    "category": "momo",
+    "emoji": "🥟",
+    "description": "Soft vegetable dumplings prepared with a classic Nepali spice blend.",
+    "tags": ["Veg", "Popular"],
+    "isActive": true,
+    "variants": [{ "name": "Veg", "extra": 0 }],
+    "styles": [
+      { "name": "Steamed", "extra": 0 },
+      { "name": "Fried", "extra": 20 },
+      { "name": "Chili", "extra": 25 },
+      { "name": "Jhol", "extra": 30 },
+      { "name": "Tandoori", "extra": 35 }
+    ],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "chicken-momos",
+    "name": "Chicken Momo",
+    "category": "momo",
+    "emoji": "🥟",
+    "description": "Juicy chicken dumplings with a satisfying savory finish and house chutney.",
+    "tags": ["Non-Veg", "Best Seller"],
+    "isActive": true,
+    "variants": [{ "name": "Chicken", "extra": 0 }],
+    "styles": [
+      { "name": "Steamed", "extra": 0 },
+      { "name": "Fried", "extra": 20 },
+      { "name": "Chili", "extra": 25 },
+      { "name": "Jhol", "extra": 30 },
+      { "name": "Tandoori", "extra": 35 }
+    ],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 130 }
+    ]
+  },
+  {
+    "id": "vegetable-pakoda",
+    "name": "Vegetable Pakoda",
+    "category": "Appetizers",
+    "emoji": "🥗",
+    "description": "Crispy mixed vegetable fritters made with gram flour and mild spices.",
+    "tags": ["Veg", "Popular"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "hara-bhara-kebab",
+    "name": "Hara Bhara Kebab",
+    "category": "Appetizers",
+    "emoji": "🥗",
+    "description": "Green vegetable kebabs with spinach, peas, herbs, and a light spice mix.",
+    "tags": ["Veg", "Fresh"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "onion-bhajia",
+    "name": "Onion Bhajia",
+    "category": "Appetizers",
+    "emoji": "🥗",
+    "description": "Golden onion fritters crisped to perfection with a savory masala finish.",
+    "tags": ["Veg", "Classic"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "aloo-tikki",
+    "name": "Aloo Tikki",
+    "category": "Appetizers",
+    "emoji": "🥗",
+    "description": "Crisp potato patties with a mildly spiced, savory finish.",
+    "tags": ["Veg", "Favorite"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "batata-vada",
+    "name": "Batata Vada",
+    "category": "Appetizers",
+    "emoji": "🥗",
+    "description": "Mashed potato fritters with a crispy coating and classic spice blend.",
+    "tags": ["Veg", "Street Food"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "samosa",
+    "name": "Samosa",
+    "category": "Appetizers",
+    "emoji": "🥗",
+    "description": "Golden pastry pockets filled with spiced potatoes and peas.",
+    "tags": ["Veg", "Classic"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "paneer-pakoda",
+    "name": "Paneer Pakoda",
+    "category": "Appetizers",
+    "emoji": "🥗",
+    "description": "Paneer cubes coated in gram flour with a crisp finish.",
+    "tags": ["Veg", "Classic"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 70 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+    ]
+  },
+  {
+    "id": "spring-roll",
+    "name": "Spring Roll",
+    "category": "Appetizers",
+    "emoji": "🥗",
+    "description": "Crisp vegetable spring rolls with a savory filling and light finish.",
+    "tags": ["Veg", "Crispy"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 70 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+    ]
+  },
+  {
+    "id": "chicken-chili",
+    "name": "Chicken Chili",
+    "category": "Appetizers",
+    "emoji": "🥗",
+    "description": "Tender chicken tossed in a bold chili sauce with onion and peppers.",
+    "tags": ["Non-Veg", "Spicy"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 85 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 140 }
+    ]
+  },
+  {
+    "id": "paneer-chili",
+    "name": "Paneer Chili",
+    "category": "Appetizers",
+    "emoji": "🥗",
+    "description": "Paneer cubes tossed in a tangy chili sauce with peppers and onion.",
+    "tags": ["Veg", "Spicy"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 130 }
+    ]
+  },
+  {
+    "id": "chicken-65",
+    "name": "Chicken 65",
+    "category": "Appetizers",
+    "emoji": "🥗",
+    "description": "Spicy, crispy chicken bites with a bold South Indian-style seasoning.",
+    "tags": ["Non-Veg", "Popular"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 90 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 160 }
+    ]
+  },
+  {
+    "id": "chicken-kebab",
+    "name": "Chicken Kebab",
+    "category": "Appetizers",
+    "emoji": "🥗",
+    "description": "Juicy grilled chicken skewers with a smoky, savory finish.",
+    "tags": ["Non-Veg", "Classic"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 95 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 170 }
+    ]
+  },
+  {
+    "id": "chicken-tikka",
+    "name": "Chicken Tikka",
+    "category": "Appetizers",
+    "emoji": "🥗",
+    "description": "Tender chicken pieces marinated and roasted for a smoky, rich flavor.",
+    "tags": ["Non-Veg", "Signature"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 100 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 180 }
+    ]
+  },
+  {
+    "id": "aloo-gobi-masala",
+    "name": "Aloo Gobi Masala",
+    "category": "Entrée",
+    "emoji": "🍲",
+    "description": "Potato and cauliflower cooked in a rich onion-tomato masala.",
+    "tags": ["Veg", "Signature"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "palak-paneer",
+    "name": "Palak Paneer",
+    "category": "Entrée",
+    "emoji": "🍲",
+    "description": "Fresh spinach and paneer simmered with aromatic spices.",
+    "tags": ["Veg", "Popular"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "aloo-matar",
+    "name": "Aloo Matar",
+    "category": "Entrée",
+    "emoji": "🍲",
+    "description": "Potatoes and peas in a warm, smooth tomato gravy.",
+    "tags": ["Veg", "Comfort"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "aloo-saag",
+    "name": "Aloo Saag",
+    "category": "Entrée",
+    "emoji": "🍲",
+    "description": "Potatoes and spinach cooked together with mild spices.",
+    "tags": ["Veg", "Classic"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "kadhi-pakoda",
+    "name": "Kadhi Pakoda",
+    "category": "Entrée",
+    "emoji": "🍲",
+    "description": "A tangy yogurt curry with fritters and comforting spice.",
+    "tags": ["Veg", "Traditional"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "chana-masala",
+    "name": "Chana Masala",
+    "category": "Entrée",
+    "emoji": "🍲",
+    "description": "Chickpeas cooked in a tangy onion-tomato masala with Indian spices.",
+    "tags": ["Veg", "Protein"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 70 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+    ]
+  },
+  {
+    "id": "chana-saag",
+    "name": "Chana Saag",
+    "category": "Entrée",
+    "emoji": "🍲",
+    "description": "Spinach and chickpeas blended into a hearty, wholesome dish.",
+    "tags": ["Veg", "Nutritious"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 70 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+    ]
+  },
+  {
+    "id": "malai-kofta",
+    "name": "Malai Kofta",
+    "category": "Entrée",
+    "emoji": "🍲",
+    "description": "Vegetable dumplings in a rich, creamy gravy.",
+    "tags": ["Veg", "Premium"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 90 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 160 }
+    ]
+  },
+  {
+    "id": "paneer-kadhai",
+    "name": "Paneer Kadhai",
+    "category": "Entrée",
+    "emoji": "🍲",
+    "description": "Paneer with peppers and onions in a fragrant kadhai masala.",
+    "tags": ["Veg", "Popular"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 90 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 160 }
+    ]
+  },
+  {
+    "id": "paneer-butter-masala",
+    "name": "Paneer Butter Masala",
+    "category": "Entrée",
+    "emoji": "🍲",
+    "description": "Paneer in a buttery tomato gravy with rich cashew sweetness.",
+    "tags": ["Veg", "Signature"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 90 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 160 }
+    ]
+  },
+  {
+    "id": "matar-paneer",
+    "name": "Matar Paneer",
+    "category": "Entrée",
+    "emoji": "🍲",
+    "description": "Paneer and peas in a mild, comforting gravy.",
+    "tags": ["Veg", "Classic"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 90 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 160 }
+    ]
+  },
+  {
+    "id": "chicken-butter-masala",
+    "name": "Chicken Butter Masala",
+    "category": "Entrée",
+    "emoji": "🍲",
+    "description": "Tender chicken simmered in a rich butter tomato gravy with aromatic spices.",
+    "tags": ["Non-Veg", "Signature"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 110 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 190 }
+    ]
+  },
+  {
+    "id": "goat-curry",
+    "name": "Goat Curry",
+    "category": "Entrée",
+    "emoji": "🍲",
+    "description": "Slow-cooked goat in a traditional curry base with rich Indian spices.",
+    "tags": ["Non-Veg", "Traditional"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 120 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 210 }
+    ]
+  },
+  {
+    "id": "butter-garlic-salmon",
+    "name": "Butter Garlic Salmon",
+    "category": "Entrée",
+    "emoji": "🍲",
+    "description": "Pan-seared salmon in a buttery garlic glaze with a savory finish.",
+    "tags": ["Seafood", "Signature"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 140 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 240 }
+    ]
+  },
+  {
+    "id": "dal-makhni",
+    "name": "Dal Makhni",
+    "category": "Dal",
+    "emoji": "🥘",
+    "description": "Slow-cooked black lentils finished with butter and cream.",
+    "tags": ["Veg", "Classic"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "yellow-dal-tadka",
+    "name": "Yellow Dal Tadka",
+    "category": "Dal",
+    "emoji": "🥘",
+    "description": "Yellow lentils tempered with ghee, garlic, and cumin.",
+    "tags": ["Veg", "Comfort"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "dal-palak",
+    "name": "Dal Palak",
+    "category": "Dal",
+    "emoji": "🥘",
+    "description": "Lentils combined with spinach for a wholesome, nutritious curry.",
+    "tags": ["Veg", "Healthy"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "panchratna-dal",
+    "name": "Panchratna Dal",
+    "category": "Dal",
+    "emoji": "🥘",
+    "description": "A five-lentil preparation with balanced, earthy flavors.",
+    "tags": ["Veg", "Traditional"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "kadhi",
+    "name": "Kadhi",
+    "category": "Dal",
+    "emoji": "🥘",
+    "description": "A yogurt-based curry with a tangy, savory profile.",
+    "tags": ["Veg", "Classic"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "jeera-rice",
+    "name": "Jeera Rice",
+    "category": "Rice",
+    "emoji": "🍚",
+    "description": "Basmati rice tempered with cumin and ghee.",
+    "tags": ["Veg", "Classic"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 35 }
+    ]
+  },
+  {
+    "id": "lemon-rice",
+    "name": "Lemon Rice",
+    "category": "Rice",
+    "emoji": "🍚",
+    "description": "Fragrant rice infused with lemon, curry leaves, and spices.",
+    "tags": ["Veg", "Fresh"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 50 }
+    ]
+  },
+  {
+    "id": "veg-pulao",
+    "name": "Veg. Pulao",
+    "category": "Rice",
+    "emoji": "🍚",
+    "description": "Aromatic rice with vegetables and gentle saffron notes.",
+    "tags": ["Veg", "Festive"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 }
+    ]
+  },
+  {
+    "id": "veg-biryani-1",
+    "name": "Veg. Biryani",
+    "category": "Rice",
+    "emoji": "🍚",
+    "description": "Layered rice with vegetables and biryani spices, slow cooked for flavor. Includes a serving of cooling raita.",
+    "tags": ["Veg", "Popular"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 }
+    ]
+  },
+  {
+    "id": "veg-chowmein",
+    "name": "Veg Chowmein",
+    "category": "Rice",
+    "emoji": "🍚",
+    "description": "Stir-fried noodles with vegetables in a savory house sauce.",
+    "tags": ["Veg", "Popular"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 }
+    ]
+  },
+  {
+    "id": "veg-pasta",
+    "name": "Veg Pasta",
+    "category": "Rice",
+    "emoji": "🍚",
+    "description": "Classic pasta tossed with vegetables and a light savory sauce.",
+    "tags": ["Veg", "Comfort"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 80 }
+    ]
+  },
+  {
+    "id": "chicken-biryani",
+    "name": "Chicken Biryani",
+    "category": "Rice",
+    "emoji": "🍚",
+    "description": "Aromatic basmati rice layered with spiced chicken and slow-cooked flavor. Includes a serving of cooling raita.",
+    "tags": ["Non-Veg", "Best Seller"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 95 }
+    ]
+  },
+  {
+    "id": "boondi-raita",
+    "name": "Boondi Raita",
+    "category": "Raita",
+    "emoji": "🥣",
+    "description": "Creamy yogurt with crispy boondi and a cool finish.",
+    "tags": ["Veg", "Cooling"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 55 }
+    ]
+  },
+  {
+    "id": "cucumber-raita",
+    "name": "Cucumber Raita",
+    "category": "Raita",
+    "emoji": "🥣",
+    "description": "Cool yogurt with cucumber, herbs, and mild seasoning.",
+    "tags": ["Veg", "Fresh"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 55 }
+    ]
+  },
+  {
+    "id": "roti",
+    "name": "Roti",
+    "category": "Breads",
+    "emoji": "🥖",
+    "description": "Soft whole wheat flatbread baked fresh for all meals.",
+    "tags": ["Veg", "Traditional"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "mini-naan",
+    "name": "Mini Naan",
+    "category": "Breads",
+    "emoji": "🥖",
+    "description": "Soft mini naan served fresh and perfect with curries, gravies, and tandoori dishes.",
+    "tags": ["Veg", "Popular"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [
+      { "name": "Plain", "extra": 0 },
+      { "name": "Butter", "extra": 5 },
+      { "name": "Garlic", "extra": 10 }
+    ],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "poori",
+    "name": "Poori",
+    "category": "Breads",
+    "emoji": "🥖",
+    "description": "Deep-fried puffed flatbread suitable for hearty meals.",
+    "tags": ["Veg", "Classic"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 65 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 110 }
+    ]
+  },
+  {
+    "id": "pav-bhaji",
+    "name": "Pav Bhaji",
+    "category": "Breakfast",
+    "emoji": "🥖",
+    "description": "A classic spiced vegetable bhaji served with soft buttered pav buns.",
+    "tags": ["Veg", "Comfort"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 130 }
+    ]
+  },
+  {
+    "id": "paratha",
+    "name": "Paratha",
+    "category": "Breads",
+    "emoji": "🥞",
+    "description": "Whole wheat paratha served with a choice of classic fillings and a rich, layered finish.",
+    "tags": ["Veg", "Classic"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [
+      { "name": "Plain", "extra": 0 },
+      { "name": "Aloo", "extra": 10 },
+      { "name": "Paneer", "extra": 15 },
+      { "name": "Mix Veg", "extra": 15 }
+    ],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 70 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+    ]
+  },
+  {
+    "id": "sandwich",
+    "name": "Sandwich",
+    "category": "Breakfast",
+    "emoji": "🥪",
+    "description": "Freshly prepared sandwich served in a classic breakfast style.",
+    "tags": ["Veg", "Quick"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [
+      { "name": "Grilled", "extra": 0 },
+      { "name": "Paneer", "extra": 10 },
+      { "name": "Plain Cold", "extra": 0 }
+    ],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 130 }
+    ]
+  },
+  {
+    "id": "poha-with-sev",
+    "name": "Poha with Sev",
+    "category": "Breakfast",
+    "emoji": "🥣",
+    "description": "Light, savory flattened rice breakfast garnished with crunchy sev.",
+    "tags": ["Veg", "Classic"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 70 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+    ]
+  },
+  {
+    "id": "egg",
+    "name": "Egg",
+    "category": "Breakfast",
+    "emoji": "🍳",
+    "description": "Fresh eggs prepared in your preferred breakfast style.",
+    "tags": ["Non-Veg", "Breakfast"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [
+      { "name": "Boiled", "extra": 0 },
+      { "name": "Scrambled", "extra": 5 },
+      { "name": "Omelette", "extra": 10 }
+    ],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 80 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 140 }
+    ]
+  },
+  {
+    "id": "fresh-fruit",
+    "name": "Fresh Fruit",
+    "category": "Breakfast",
+    "emoji": "🍇",
+    "description": "A selection of sliced seasonal fruits for a fresh, light breakfast option.",
+    "tags": ["Veg", "Fresh"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 85 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 150 }
+    ]
+  },
+  {
+    "id": "masala-tea",
+    "name": "Masala Tea",
+    "category": "Breakfast",
+    "emoji": "☕",
+    "description": "Warm spiced tea with a traditional masala aroma and soothing finish.",
+    "tags": ["Veg", "Classic"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 35 }
+    ]
+  },
+  {
+    "id": "hot-brewed-coffee",
+    "name": "Hot Brewed Coffee",
+    "category": "Breakfast",
+    "emoji": "☕",
+    "description": "Freshly brewed coffee served hot for an energizing start to the day.",
+    "tags": ["Veg", "Classic"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 40 }
+    ]
+  },
+  {
+    "id": "idli-coconut-chutney",
+    "name": "Idli and Coconut Chutney",
+    "category": "Breakfast",
+    "emoji": "🍽️",
+    "description": "Soft steamed idlis served with fresh coconut chutney and a mild seasoning.",
+    "tags": ["Veg", "Traditional"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 80 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 140 }
+    ]
+  },
+  {
+    "id": "upma",
+    "name": "Upma",
+    "category": "Breakfast",
+    "emoji": "🍲",
+    "description": "A savory semolina breakfast cooked with vegetables, mustard seeds, and curry leaves.",
+    "tags": ["Veg", "Comfort"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 70 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+    ]
+  },
+  {
+    "id": "sabudana-khichdi",
+    "name": "Sabudana Khichdi",
+    "category": "Breakfast",
+    "emoji": "🥣",
+    "description": "A classic pearl sago breakfast with roasted peanuts, potato, and light spices.",
+    "tags": ["Veg", "Traditional"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 130 }
+    ]
+  },
+  {
+    "id": "gulab-jamun-1",
+    "name": "Gulab Jamun",
+    "category": "Dessert",
+    "emoji": "🍬",
+    "description": "Soft, syrup-soaked milk dumplings known for their classic sweetness.",
+    "tags": ["Sweet", "Classic"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+    ]
+  },
+  {
+    "id": "gajar-halwa",
+    "name": "Gajar Halwa",
+    "category": "Dessert",
+    "emoji": "🍬",
+    "description": "Rich carrot pudding finished with milk solids and nuts.",
+    "tags": ["Sweet", "Traditional"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+    ]
+  },
+  {
+    "id": "rasmalai",
+    "name": "Rasmalai",
+    "category": "Dessert",
+    "emoji": "🍬",
+    "description": "Soft milk dumplings in saffron-flavored rabri.",
+    "tags": ["Sweet", "Premium"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+    ]
+  },
+  {
+    "id": "moong-dal-halwa",
+    "name": "Moong Dal Halwa",
+    "category": "Dessert",
+    "emoji": "🍬",
+    "description": "Slow-cooked moong dal dessert with ghee, nuts, and a rich golden finish.",
+    "tags": ["Sweet", "Traditional"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+    ]
+  },
+  {
+    "id": "fresh-fruit-platter",
+    "name": "Fresh Fruit Platter",
+    "category": "Dessert",
+    "emoji": "🍇",
+    "description": "A colorful platter of seasonal fresh fruits for a light, refreshing dessert option.",
+    "tags": ["Veg", "Fresh"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 85 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 150 }
+    ]
+  },
+  {
+    "id": "kheer",
+    "name": "Kheer",
+    "category": "Dessert",
+    "emoji": "🍬",
+    "description": "Slow-cooked rice pudding with milk, sugar, and aromatic cardamom.",
+    "tags": ["Sweet", "Classic"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 75 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 120 }
+    ]
+  },
+  {
+    "id": "mango-lassi",
+    "name": "Mango Lassi",
+    "category": "Drinks",
+    "emoji": "🥭",
+    "description": "Refreshing yogurt-based mango drink blended smooth and chilled.",
+    "tags": ["Veg", "Refreshing"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Bottle", "serves": "1 serving", "pcs": "Bottle", "price": 6 },
+      { "label": "Large Bottle", "serves": "2 servings", "pcs": "Bottle", "price": 10 }
+    ]
+  },
+  {
+    "id": "soda",
+    "name": "Soda",
+    "category": "Drinks",
+    "emoji": "🥤",
+    "description": "Choose assorted soda or a specific type. Please specify how many of each you want in the additional notes.",
+    "tags": ["Drink", "Refreshment"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [
+      { "name": "Assorted", "extra": 0 },
+      { "name": "Original Coke", "extra": 0 },
+      { "name": "Diet Coke", "extra": 0 },
+      { "name": "Zero Coke", "extra": 0 },
+      { "name": "Sprite", "extra": 0 },
+      { "name": "Fanta", "extra": 0 }
+    ],
+    "sizes": [
+      { "label": "Can", "serves": "1 serving", "pcs": "Can", "price": 3.5 },
+      { "label": "6 Pack", "serves": "6 servings", "pcs": "Cans", "price": 19 },
+      { "label": "12 Pack", "serves": "12 servings", "pcs": "Cans", "price": 36 }
+    ]
+  },
+  {
+    "id": "bottled-water",
+    "name": "Water",
+    "category": "Drinks",
+    "emoji": "💧",
+    "description": "Fresh bottled water for a clean, easy hydration option.",
+    "tags": ["Drink", "Fresh"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Bottle", "serves": "1 serving", "pcs": "Bottle", "price": 2.5 }
+    ]
+  },
+  {
+    "id": "jarritos",
+    "name": "Jarritos Mexican Soda",
+    "category": "Drinks",
+    "emoji": "🥤",
+    "description": "A premium bottled soda with a bright Mexican citrus taste.",
+    "tags": ["Drink", "Premium"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Bottle", "serves": "1 serving", "pcs": "Bottle", "price": 5 }
+    ]
+  },
+  {
+    "id": "lemonade",
+    "name": "Lemonade",
+    "category": "Drinks",
+    "emoji": "🍋",
+    "description": "Fresh, tart, and chilled lemonade served for a bright refreshment.",
+    "tags": ["Drink", "Fresh"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Pitcher", "serves": "8-10 servings", "pcs": "Pitcher", "price": 22 },
+      { "label": "Large Pitcher", "serves": "15-20 servings", "pcs": "Pitcher", "price": 38 }
+    ]
+  },
+  {
+    "id": "iced-sweet-tea",
+    "name": "Iced Sweet Tea",
+    "category": "Drinks",
+    "emoji": "🫖",
+    "description": "Chilled sweet tea with a smooth, refreshing finish.",
+    "tags": ["Drink", "Refreshing"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Pitcher", "serves": "8-10 servings", "pcs": "Pitcher", "price": 20 },
+      { "label": "Large Pitcher", "serves": "15-20 servings", "pcs": "Pitcher", "price": 35 }
+    ]
+  },
+  {
+    "id": "iced-unsweet-tea",
+    "name": "Iced Unsweet Tea",
+    "category": "Drinks",
+    "emoji": "🫖",
+    "description": "Fresh iced tea with a crisp taste and no added sweetness.",
+    "tags": ["Drink", "Fresh"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Pitcher", "serves": "8-10 servings", "pcs": "Pitcher", "price": 20 },
+      { "label": "Large Pitcher", "serves": "15-20 servings", "pcs": "Pitcher", "price": 35 }
+    ]
+  },
+  {
+    "id": "green-salad",
+    "name": "Green Salad",
+    "category": "Salad",
+    "emoji": "🥗",
+    "description": "Mixed greens with cucumbers, tomatoes, and a light seasonal dressing.",
+    "tags": ["Veg", "Fresh"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 55 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 90 }
+    ]
+  },
+  {
+    "id": "kachumber-salad",
+    "name": "Kachumber Salad",
+    "category": "Salad",
+    "emoji": "🥗",
+    "description": "A classic Indian salad with cucumber, tomato, onion, and fresh herbs.",
+    "tags": ["Veg", "Traditional"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 58 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 95 }
+    ]
+  },
+  {
+    "id": "cucumber-onion-salad",
+    "name": "Cucumber Onion Salad",
+    "category": "Salad",
+    "emoji": "🥗",
+    "description": "Crisp cucumber and onion salad with a light lime and herb seasoning.",
+    "tags": ["Veg", "Fresh"],
+    "isActive": true,
+    "variants": [{ "name": "Regular", "extra": 0 }],
+    "styles": [{ "name": "Standard", "extra": 0 }],
+    "sizes": [
+      { "label": "Small Tray", "serves": "Serves 10-12 people", "pcs": "Small tray", "price": 60 },
+      { "label": "Large Tray", "serves": "Serves 20-25 people", "pcs": "Large tray", "price": 100 }
+    ]
+  }
+]

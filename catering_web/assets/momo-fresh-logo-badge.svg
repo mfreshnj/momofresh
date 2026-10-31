@@ -1,0 +1,18 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="badgeBg" x1="24" y1="16" x2="196" y2="196" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6A65A"/>
+      <stop offset="1" stop-color="#D96B2A"/>
+    </linearGradient>
+    <linearGradient id="badgeLeaf" x1="142" y1="40" x2="176" y2="90" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D9F7E2"/>
+      <stop offset="1" stop-color="#2B8B59"/>
+    </linearGradient>
+  </defs>
+  <rect width="220" height="220" rx="48" fill="url(#badgeBg)"/>
+  <circle cx="110" cy="110" r="80" stroke="#FFF5EE" stroke-width="6" fill="#FFF5EE" fill-opacity="0.10"/>
+  <path d="M64 142L84 72L110 118L136 72L156 142" stroke="#FFF5EE" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M75 156C83.6 168.5 94.6 175 110 175C125.7 175 136.7 168.4 145 156" stroke="#FFF5EE" stroke-width="10" stroke-linecap="round"/>
+  <path d="M146 42C166 42 180 57 180 77C164 77 151 66 146 42Z" fill="url(#badgeLeaf)"/>
+  <path d="M148 72C159 60 171 52 183 50C180 69 168 82 148 87V72Z" fill="#EAFEF0"/>
+</svg>
