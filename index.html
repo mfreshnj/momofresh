@@ -89,13 +89,18 @@
         Your cart is empty. Add some tasty items first.
       </div>
 
-      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-section cart-section--items">
+        <div class="cart-section-header">Order Items</div>
+        <div id="cartItems" class="cart-items"></div>
+      </div>
 
-      <div class="order-form">
-        <label class="full-width">
-          Full Name
-          <input id="customerName" type="text" placeholder="Your name" />
-        </label>
+      <div class="cart-section cart-section--details">
+        <div class="cart-section-header">Customer Details</div>
+        <div class="order-form">
+          <label class="full-width">
+            Full Name
+            <input id="customerName" type="text" placeholder="Your name" />
+          </label>
         <label class="full-width">
           Phone Number
           <input id="customerPhone" type="tel" placeholder="Your phone number" />
@@ -119,10 +124,11 @@
             <option value="Delivery">Delivery</option>
           </select>
         </label>
-        <label id="deliveryAddressBlock" class="full-width hidden-field">
-          Delivery Address
-          <textarea id="deliveryAddress" rows="3" placeholder="Street address, apartment, city, ZIP"></textarea>
-        </label>
+          <label id="deliveryAddressBlock" class="full-width hidden-field">
+            Delivery Address
+            <textarea id="deliveryAddress" rows="3" placeholder="Street address, apartment, city, ZIP"></textarea>
+          </label>
+        </div>
       </div>
 
       <div class="cart-summary">
@@ -148,7 +154,7 @@
           <p>For family platters, office lunches, and event catering, message us for custom pricing and menu planning.</p>
           <p><strong>Call / WhatsApp:</strong> +1 9293931494</p>
           <p><strong>Email:</strong> mfreshnj@gmail.com</p>
-          <p><strong>Pickup Address:</strong> 120 Cedar Grove Ln, Somerset, New Jersey 08873</p>
+          <p><strong>Pickup Address:</strong> 120 Cedar Grove Ln, Somerset, NJ 08873</p>
           <p><strong>Order Timing:</strong> Please order at least 3 days in advance</p>
           <p><strong>Delivery:</strong> Delivery fee may apply</p>
         </div>
@@ -180,6 +186,14 @@
             <div class="modal-row">
               <label for="modalQty">Quantity</label>
               <input id="modalQty" type="number" min="1" value="1" />
+            </div>
+
+            <div class="option-block option-block--notes">
+              <button type="button" class="inline-note-toggle" data-note-toggle-modal>Add Instructions</button>
+              <div id="modalNotePanel" class="modal-note-panel hidden">
+                <label for="modalNote">Special Instructions</label>
+                <textarea id="modalNote" rows="3" placeholder="Add any special request here..."></textarea>
+              </div>
             </div>
 
             <div class="customizer-footer">

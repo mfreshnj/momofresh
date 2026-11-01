@@ -14,6 +14,8 @@ const reviewSubtotal = document.getElementById('reviewSubtotal');
 const modalStyle = document.getElementById('modalStyle');
 const modalSize = document.getElementById('modalSize');
 const modalQty = document.getElementById('modalQty');
+const modalNote = document.getElementById('modalNote');
+const modalNotePanel = document.getElementById('modalNotePanel');
 const modalPrice = document.getElementById('modalPrice');
 
 const cart = [];
@@ -222,6 +224,17 @@ function updateCustomizerDetails() {
   modalPrice.textContent = formatCurrency(total);
 }
 
+function toggleModalNotePanel(forceOpen) {
+  if (!modalNotePanel) return;
+  const shouldOpen = typeof forceOpen === 'boolean' ? forceOpen : modalNotePanel.classList.contains('hidden');
+  modalNotePanel.classList.toggle('hidden', !shouldOpen);
+
+  const toggleButton = document.querySelector('[data-note-toggle-modal]');
+  if (toggleButton) {
+    toggleButton.textContent = shouldOpen ? 'Hide Instructions' : 'Add Instructions';
+  }
+}
+
 function openCustomizer(item) {
   state.currentItem = item;
   state.currentCartIndex = null;
@@ -237,6 +250,8 @@ function openCustomizer(item) {
   modalSize.value = getDefaultSize(item)?.label || sizeOptions[0].label;
 
   modalQty.value = 1;
+  modalNote.value = '';
+  toggleModalNotePanel(false);
   document.getElementById('addModalToCart').textContent = 'Add to Cart';
   updateCustomizerDetails();
   customizerModal.classList.remove('hidden');
@@ -264,6 +279,8 @@ function openCartItemEditor(index) {
   modalStyle.value = item.style || styleOptions[0].name;
   modalSize.value = item.size || sizeOptions[0].label;
   modalQty.value = item.quantity;
+  modalNote.value = item.note || '';
+  toggleModalNotePanel(Boolean(item.note && item.note.trim()));
   document.getElementById('addModalToCart').textContent = 'Update Item';
   updateCustomizerDetails();
   customizerModal.classList.remove('hidden');
@@ -273,6 +290,8 @@ function openCartItemEditor(index) {
 function closeCustomizer() {
   state.currentCartIndex = null;
   state.currentItem = null;
+  if (modalNote) modalNote.value = '';
+  toggleModalNotePanel(false);
   document.getElementById('addModalToCart').textContent = 'Add to Cart';
   customizerModal.classList.add('hidden');
   customizerModal.setAttribute('aria-hidden', 'true');
@@ -309,8 +328,10 @@ function renderReviewModal() {
         .join('')
     : '<p class="review-empty">Your cart is empty.</p>';
 
+  const pickupLocation = '120 Cedar Grove Ln, Somerset, NJ 08873';
+
   reviewOrderSummary.innerHTML = `
-    <div class="review-block">
+    <div class="review-block review-block--details">
       <h4>Order details</h4>
       <div class="review-line"><span>Customer</span><strong>${name}</strong></div>
       <div class="review-line"><span>Phone</span><strong>${phone}</strong></div>
@@ -318,10 +339,11 @@ function renderReviewModal() {
       <div class="review-line"><span>Headcount</span><strong>${guestCount}</strong></div>
       <div class="review-line"><span>Time</span><strong>${serviceTime}</strong></div>
       <div class="review-line"><span>Order type</span><strong>${orderType}</strong></div>
+      ${orderType === 'Pickup' ? `<div class="review-line review-address"><span>Pickup address</span><strong>${pickupLocation}</strong></div>` : ''}
       ${orderType === 'Delivery' ? `<div class="review-line review-address"><span>Delivery address</span><strong>${deliveryAddress}</strong></div>` : ''}
     </div>
 
-    <div class="review-block">
+    <div class="review-block review-block--items">
       <h4>Items</h4>
       ${itemsHtml}
     </div>
@@ -350,6 +372,7 @@ function addItemFromCustomizer() {
   const selectedStyle = (item.styles || []).find((option) => option.name === modalStyle.value) || getDefaultStyle(item);
   const selectedSize = (item.sizes || []).find((option) => option.label === modalSize.value) || getDefaultSize(item);
   const quantity = Math.max(1, Number(modalQty.value) || 1);
+  const note = (modalNote?.value || '').trim();
   const price = calculateItemPrice(item, getDefaultVariant(item), selectedSize, selectedStyle);
 
   if (state.currentCartIndex !== null && cart[state.currentCartIndex]) {
@@ -360,7 +383,8 @@ function addItemFromCustomizer() {
       serves: selectedSize?.serves || '',
       pcs: selectedSize?.pcs || '',
       price,
-      quantity
+      quantity,
+      note
     };
   } else {
     cart.push({
@@ -374,13 +398,12 @@ function addItemFromCustomizer() {
       pcs: selectedSize?.pcs || '',
       price,
       quantity,
-      note: ''
+      note
     });
   }
 
   renderCart();
   closeCustomizer();
-  openCart();
 }
 
 function renderCart() {
@@ -427,6 +450,15 @@ function renderCart() {
             ${item.serves ? ` • ${item.serves}` : ''}
             ${item.pcs ? ` • ${item.pcs}` : ''}
           </div>
+
+          <button class="note-toggle" type="button" data-note-toggle-index="${index}">
+            ${item.note ? 'Edit Instructions' : 'Add Instructions'}
+          </button>
+
+          <div class="item-note-panel hidden">
+            <label class="item-note-label" for="note-${index}">Special Instructions</label>
+            <textarea id="note-${index}" data-note-index="${index}" rows="2" placeholder="Add a special instruction...">${item.note || ''}</textarea>
+          </div>
         </div>
       `
     )
@@ -471,6 +503,26 @@ function renderCart() {
     textarea.addEventListener('input', (event) => {
       const index = Number(event.target.dataset.noteIndex);
       cart[index].note = event.target.value;
+      const noteToggle = event.target.closest('.cart-item')?.querySelector('.note-toggle');
+      if (noteToggle) {
+        noteToggle.textContent = event.target.value.trim() ? 'Edit Instructions' : 'Add Instructions';
+      }
+    });
+  });
+
+  document.querySelectorAll('[data-note-toggle-index]').forEach((button) => {
+    button.addEventListener('click', (event) => {
+      event.stopPropagation();
+      const index = Number(button.dataset.noteToggleIndex);
+      const itemCard = button.closest('.cart-item');
+      const notePanel = itemCard?.querySelector('.item-note-panel');
+      if (!notePanel) return;
+      const isHidden = notePanel.classList.toggle('hidden');
+      if (isHidden) {
+        button.textContent = cart[index]?.note ? 'Edit Instructions' : 'Add Instructions';
+      } else {
+        button.textContent = 'Hide Instructions';
+      }
     });
   });
 }
@@ -518,21 +570,30 @@ function prepareWhatsAppMessage() {
 
   const lines = cart.map((item, index) => {
     const noteText = item.note ? `\n   Note: ${item.note}` : '';
-    return `${index + 1}. ${item.name} - ${item.variant} / ${item.style} / ${item.size}\n   Qty: ${item.quantity}${noteText}\n   Price: ${formatCurrency(item.price * item.quantity)}`;
+    return [
+      `${index + 1}) ${item.name}`,
+      `   Style: ${item.style}`,
+      `   Size: ${item.size}`,
+      `   Qty: ${item.quantity}`,
+      `   Price: ${formatCurrency(item.price * item.quantity)}`,
+      noteText
+    ].join('\n');
   });
 
   const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const pickupLocation = '120 Cedar Grove Ln, Somerset, NJ 08873';
   const message = [
     'Hello, I would like to place an order.',
     '',
     'Customer Details:',
-    `Name: ${name}`,
-    `Phone: ${phone}`,
-    `Order Type: ${orderType}`,
-    guestCount ? `Headcount: ${guestCount}` : 'Headcount: Not provided',
-    eventDate ? `Event Date: ${eventDate}` : 'Event Date: Not provided',
-    serviceTime ? `Preferred Time: ${serviceTime}` : 'Preferred Time: Not provided',
-    orderType === 'Delivery' ? `Delivery Address: ${deliveryAddress}` : '',
+    `• Name: ${name}`,
+    `• Phone: ${phone}`,
+    `• Order Type: ${orderType}`,
+    `• Headcount: ${guestCount || 'Not provided'}`,
+    `• Event Date: ${eventDate || 'Not provided'}`,
+    `• Preferred Time: ${serviceTime || 'Not provided'}`,
+    orderType === 'Pickup' ? `• Pickup Address: ${pickupLocation}` : '',
+    orderType === 'Delivery' ? `• Delivery Address: ${deliveryAddress || 'Not provided'}` : '',
     '',
     'Order Summary:',
     ...lines,
@@ -679,6 +740,9 @@ function bindControls() {
   document.getElementById('confirmReviewOrder')?.addEventListener('click', () => {
     closeReviewModal();
     sendOrderToWhatsApp();
+  });
+  document.querySelector('[data-note-toggle-modal]')?.addEventListener('click', () => {
+    toggleModalNotePanel();
   });
   document.getElementById('orderButton')?.addEventListener('click', sendOrderToWhatsApp);
   document.getElementById('orderType')?.addEventListener('change', toggleOrderDetails);
