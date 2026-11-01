@@ -511,6 +511,7 @@ textarea {
   transition: transform 0.25s ease;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   z-index: 30;
 }
 
@@ -739,6 +740,14 @@ textarea {
   margin-top: 4px;
 }
 
+.review-item-note {
+  color: var(--muted);
+  font-size: 0.68rem;
+  margin-top: 4px;
+  font-style: italic;
+  line-height: 1.4;
+}
+
 .review-item-total {
   display: grid;
   justify-items: end;
@@ -792,16 +801,20 @@ textarea {
   border-radius: 14px;
   border: 1px solid rgba(119, 76, 25, 0.12);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .cart-section--items {
   background: #fdf3eb;
   border-left: 4px solid var(--primary);
+  max-height: 32vh;
 }
 
 .cart-section--details {
   background: #f3f7fb;
   border-left: 4px solid #7ea6c8;
+  max-height: 38vh;
 }
 
 .cart-section-header {
@@ -819,6 +832,7 @@ textarea {
   display: grid;
   gap: 10px;
   min-height: 0;
+  max-height: 100%;
   background: rgba(255,255,255,0.08);
 }
 
@@ -978,6 +992,8 @@ textarea {
   gap: 10px 12px;
   align-content: start;
   background: transparent;
+  overflow-y: auto;
+  max-height: 100%;
 }
 
 .order-form label {

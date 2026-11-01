@@ -323,6 +323,7 @@ function renderReviewModal() {
               <div>
                 <strong>${index + 1}. ${item.name}</strong>
                 <div class="review-item-meta">${item.variant} • ${item.style} • ${getDisplaySizeLabel(item)}</div>
+                ${item.note ? `<div class="review-item-note">Note: ${item.note}</div>` : ''}
               </div>
               <div class="review-item-total">
                 <span>${item.quantity}x</span>
