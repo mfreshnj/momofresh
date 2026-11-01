@@ -569,36 +569,36 @@ function prepareWhatsAppMessage() {
   }
 
   const lines = cart.map((item, index) => {
-    const noteText = item.note ? `\n   Note: ${item.note}` : '';
+    const noteText = item.note ? `   _Note:_ ${item.note}` : '';
     return [
-      `${index + 1}) ${item.name}`,
+      `*${index + 1}) ${item.name}*`,
       `   Style: ${item.style}`,
       `   Size: ${item.size}`,
       `   Qty: ${item.quantity}`,
       `   Price: ${formatCurrency(item.price * item.quantity)}`,
       noteText
-    ].join('\n');
+    ].filter(Boolean).join('\n');
   });
 
   const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   const pickupLocation = '120 Cedar Grove Ln, Somerset, NJ 08873';
   const message = [
-    'Hello, I would like to place an order.',
+    '*Hello, I would like to place an order.*',
     '',
-    'Customer Details:',
-    `• Name: ${name}`,
-    `• Phone: ${phone}`,
-    `• Order Type: ${orderType}`,
-    `• Headcount: ${guestCount || 'Not provided'}`,
-    `• Event Date: ${eventDate || 'Not provided'}`,
-    `• Preferred Time: ${serviceTime || 'Not provided'}`,
-    orderType === 'Pickup' ? `• Pickup Address: ${pickupLocation}` : '',
-    orderType === 'Delivery' ? `• Delivery Address: ${deliveryAddress || 'Not provided'}` : '',
+    '*Customer Details*',
+    `Name: ${name}`,
+    `Phone: ${phone}`,
+    `Order Type: ${orderType}`,
+    `Headcount: ${guestCount || 'Not provided'}`,
+    `Event Date: ${eventDate || 'Not provided'}`,
+    `Preferred Time: ${serviceTime || 'Not provided'}`,
+    orderType === 'Pickup' ? `Pickup Address: ${pickupLocation}` : '',
+    orderType === 'Delivery' ? `Delivery Address: ${deliveryAddress || 'Not provided'}` : '',
     '',
-    'Order Summary:',
+    '*Order Summary*',
     ...lines,
     '',
-    `Total: ${formatCurrency(subtotal)}`
+    `*Total:* ${formatCurrency(subtotal)}`
   ].filter(Boolean).join('\n');
 
   return message;
