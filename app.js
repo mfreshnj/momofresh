@@ -28,6 +28,12 @@ const state = {
 
 const formatCurrency = (value) => new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(value);
 
+function getDisplaySizeLabel(item) {
+  const sizeText = item?.size || 'Standard';
+  const pcsText = item?.pcs ? String(item.pcs).trim() : '';
+  return pcsText ? `${sizeText} (${pcsText})` : sizeText;
+}
+
 function getDefaultVariant(item) {
   return item.variants && item.variants.length ? item.variants[0] : null;
 }
@@ -316,7 +322,7 @@ function renderReviewModal() {
             <div class="review-item-row">
               <div>
                 <strong>${index + 1}. ${item.name}</strong>
-                <div class="review-item-meta">${item.variant} • ${item.style} • ${item.size}</div>
+                <div class="review-item-meta">${item.variant} • ${item.style} • ${getDisplaySizeLabel(item)}</div>
               </div>
               <div class="review-item-total">
                 <span>${item.quantity}x</span>
@@ -573,7 +579,7 @@ function prepareWhatsAppMessage() {
     return [
       `*${index + 1}) ${item.name}*`,
       `   Style: ${item.style}`,
-      `   Size: ${item.size}`,
+      `   Size: ${getDisplaySizeLabel(item)}`,
       `   Qty: ${item.quantity}`,
       `   Price: ${formatCurrency(item.price * item.quantity)}`,
       noteText
